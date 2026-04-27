@@ -1,7 +1,9 @@
-
 body {
-  background: red !important;
+  background: #FFFFFF;
+  color: black;
+  font-family: Arial, sans-serif;
 }
+
 
 section {
   padding: 80px 20px;

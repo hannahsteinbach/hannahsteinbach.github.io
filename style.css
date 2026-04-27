@@ -10,3 +10,10 @@ section {
   max-width: 900px;
   margin: 0 auto;
 }
+
+img {
+  width: 200px;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+}

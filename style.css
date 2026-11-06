@@ -272,11 +272,13 @@ a.email-link:hover {
   margin: 0;
   display: block;
 }
-.profile-figure figcaption {
+.profile-figure figcaption,
+.cpss-figure figcaption {
   font-size: 0.8rem;
   color: #888;
   margin-top: 8px;
   font-style: italic;
+    text-align: center;
 }
 
 /* Mobile */
@@ -418,5 +420,17 @@ a.email-link:hover {
 
 .clorms-picture img {
   max-width: 100%;
+  height: auto;
+}
+
+.profile-figure .cpss-image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.cpss-figure img {
+  width: 100%;
+  max-width: 500px;
   height: auto;
 }

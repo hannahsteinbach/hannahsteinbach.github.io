@@ -8,19 +8,71 @@
 </head>
 
 <body>
-<header class="topbar">
-  <h1 style="color:darkslategray;" href="../index.html">hannah steinbach</h1>
+  <header class="topbar">
+      <div class="title-row">
+        <h1>hannah steinbach</h1>
+        <span class="symbols">
+         <button class="quote-button" onclick="toggleQuote()">🫧</button>
+            🦦
+        </span>
+      </div>
 
-    <nav>
-      <a style="color:seagreen;" href="../index.html">about</a>
-        <a style="color:darkgreen;" href="projects.html">projects</a>
-        <a style="color:seagreen;" href="books.html">books</a>
-        <a style="color:darkgreen;" href="whimsy.html">whimsy</a>
-        <a style="color:seagreen;" href="contact.html">contact</a>
-    </nav>
+      <p id="bubble-quote" class="bubble-quote">
+        "if you're truly wild at heart, you'll fight for your dreams"
+      </p>
+  <nav>
+    <a href="../index.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="readings.html">readings</a>
+    <a href="gallery.html">gallery</a>
+    <a href="contact.html" class="active">contact</a>
+  </nav>
 </header>
 
-mailto:hannahsteinbach0312@gmail.com
 
+<main class="page-content">
+
+  <p>
+    if you're interested to know more about any of my projects,
+    want to talk about books, or compliment my animal gallery,
+    send me an email:
+  </p>
+
+  <p>
+    <a class="email-link" href="mailto:hannahsteinbach0312@gmail.com">
+      hannahsteinbach0312@gmail.com
+    </a>
+  </p>
+
+  <div class="social-links">
+      <a href="https://github.com/hannahsteinbach" target="_blank">🐙 github</a>
+    <a href="https://huggingface.co/hannahsteinbach" target="_blank">🤗 hugging face</a>
+    <a href="https://bsky.app/profile/hannahwithh.bsky.social" target="_blank">🦋 bluesky</a>
+    <a href="https://letterboxd.com/hannahfarquaad/" target="_blank">🎬 letterboxd</a>
+  </div>
+    <button class="clorm-button" onclick="toggleClorms()">
+  🪱🤠
+    </button>
+
+    <div id="clorms-picture" class="clorms-picture">
+      <img
+        src="../images/clormies.jpg"
+        alt="Clorms on the fridge"
+        class="project-image"
+      >
+    </div>
+</main>
+  <script>
+  function toggleClorms() {
+    document.getElementById("clorms-picture")
+      .classList.toggle("visible");
+  }
+</script>
+<script>
+  function toggleQuote() {
+    document.getElementById("bubble-quote")
+      .classList.toggle("visible");
+  }
+</script>
 </body>
 </html>

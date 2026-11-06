@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +11,120 @@
 <body>
 
   <header class="topbar">
-    <h1 style="color:darkslategray;">hannah steinbach</h1>
+      <div class="title-row">
+        <h1>hannah steinbach</h1>
+        <span class="symbols">
+         <button class="quote-button" onclick="toggleQuote()">🫧</button>
+            🦦
+        </span>
+      </div>
 
+      <p id="bubble-quote" class="bubble-quote">
+        "if you're truly wild at heart, you'll fight for your dreams"
+      </p>
     <nav>
-      <a style="color:seagreen;" href="index.html">about</a>
-        <a style="color:darkgreen;" href="sections/projects.html">projects</a>
-        <a style="color:seagreen;" href="sections/books.html">books</a>
-        <a style="color:darkgreen;" href="sections/whimsy.html">whimsy</a>
-        <a style="color:seagreen;" href="sections/contact">contact</a>
+      <a href="index.html" class="active">about</a>
+      <a href="sections/projects.html">projects</a>
+      <a href="sections/readings.html">readings</a>
+      <a href="sections/gallery.html">gallery</a>
+      <a href="sections/contact.html">contact</a>
     </nav>
   </header>
 
-  <section id="about">
-      ups hab vergessen, was zu schreiben
-    <!-- about content -->
-  </section>
 
+<main class="page-content">
+  <div class="about-intro">
+      <div class="about-text">
+        <div class="intro-text">
+          <p>hi, i'm hannah!:)</p>
+          <p>
+            I have an interdisciplinary background in computational social science,
+            NLP, and discourse analysis. I'm interested in how computational and
+            quantitative methods can help us understand political and social phenomena,
+            particularly through the study of language and communication
+          </p>
+        </div>
+      <section class="cv-section">
+        <h2>Education</h2>
 
+        <div class="cv-entry">
+          <div class="cv-entry-heading">
+            <strong>M.Sc. Cognitive Systems</strong>
+            <span>10/2023 – 05/2026</span>
+          </div>
+          <p class="institution">Universität Potsdam</p>
+        </div>
 
-<img src="images/clormies.jpg" alt="me and my homies">
+        <div class="cv-entry">
+          <div class="cv-entry-heading">
+            <strong>B.A. Language Science</strong>
+            <span>10/2021 – 09/2023</span>
+          </div>
+          <p class="institution">Universität des Saarlandes</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-heading">
+            <strong>Student Assistant – Digital News Dynamics Research Group</strong>
+            <span>10/2025 – 04/2026</span>
+          </div>
+          <p class="institution">Weizenbaum Institut</p>
+          <p>
+            Assisted in the development of a Qualitative Text Labelling
+            Framework (QLTF) to analyze epistemological practices in
+            data-intensive research and exploring the use of LLMs for
+            automated annotation and workflow support
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-heading">
+            <strong>Student Assistant – Department of Knowledge Processing
+            and Information Systems</strong>
+            <span>07/2024 – 06/2025</span>
+          </div>
+          <p class="institution">Universität Potsdam</p>
+          <p>
+            Modeled complex planning problems using ASP and preference
+            optimization; produced tutorials and documentation for
+            reproducible workflows
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-heading">
+            <strong>Student Assistant – Department of Language Science
+            and Technology</strong>
+            <span>08/2022 – 08/2023</span>
+          </div>
+          <p class="institution">Universität des Saarlandes</p>
+          <p>
+            Mentored first-semester students and promoted the BA Language
+            Science through outreach initiatives
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <figure class="profile-figure">
+      <img src="images/hannah_lisbon.jpg"
+           alt="A portrait of Hannah"
+           class="profile-picture">
+      <figcaption>in lisbon☀️</figcaption>
+    </figure>
+
+  </div>
+</main>
+<script>
+  function toggleQuote() {
+    document.getElementById("bubble-quote")
+      .classList.toggle("visible");
+  }
+</script>
 </body>
 </html>

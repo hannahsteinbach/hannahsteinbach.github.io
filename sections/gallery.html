@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hannah steinbach</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+      <div class="title-row">
+        <h1>hannah steinbach</h1>
+        <span class="symbols">
+         <button class="quote-button" onclick="toggleQuote()">🫧</button>
+            🦦
+        </span>
+      </div>
+
+      <p id="bubble-quote" class="bubble-quote">
+        "if you're truly wild at heart, you'll fight for your dreams"
+      </p>
+
+  <nav>
+    <a href="../index.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="readings.html">readings</a>
+    <a href="gallery.html" class="active">gallery</a>
+    <a href="contact.html">contact</a>
+  </nav>
+</header>
+<section class="photo-grid">
+  <img src="../images/cooper.JPG" alt="Dog">
+  <img src="../images/cooper5.JPG" alt="Dog">
+  <img src="../images/cooper3.png" alt="Dog">
+  <img src="../images/palinka.jpeg" alt="Dog">
+  <img src="../images/druji.jpeg" alt="Dog">
+  <img src="../images/romybaby.png" alt="Dog">
+
+  <img src="../images/archie.JPG" alt="Dog">
+
+  <img src="../images/mallorcacat.JPG" alt="Cat">
+  <img src="../images/st.malo.cat.JPG" alt="Cat">
+</section>
+<script>
+  function toggleQuote() {
+    document.getElementById("bubble-quote")
+      .classList.toggle("visible");
+  }
+</script>
+</body>
+</html>

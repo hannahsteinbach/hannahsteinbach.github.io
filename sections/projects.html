@@ -8,20 +8,133 @@
 </head>
 
 <body>
-<header class="topbar">
-  <h1 style="color:darkslategray;" href="../index.html">hannah steinbach</h1>
+  <header class="topbar">
+      <div class="title-row">
+        <h1>hannah steinbach</h1>
+        <span class="symbols">
+         <button class="quote-button" onclick="toggleQuote()">🫧</button>
+            🦦
+        </span>
+      </div>
 
-    <nav>
-      <a style="color:seagreen;" href="../index.html">about</a>
-        <a style="color:darkgreen;" href="projects.html">projects</a>
-        <a style="color:seagreen;" href="books.html">books</a>
-        <a style="color:darkgreen;" href="whimsy.html">whimsy</a>
-        <a style="color:seagreen;" href="contact.html">contact</a>
-    </nav>
+      <p id="bubble-quote" class="bubble-quote">
+        "if you're truly wild at heart, you'll fight for your dreams"
+      </p>
+  <nav>
+    <a href="../index.html">about</a>
+    <a href="projects.html" class="active">projects</a>
+    <a href="readings.html">readings</a>
+    <a href="gallery.html">gallery</a>
+    <a href="contact.html">contact</a>
+  </nav>
 </header>
+<main class="page-content">
+  <section class="project-section">
+    <h2>Publications</h2>
 
-i worked on a lot of projects
+    <div class="project-entry">
+      <p class="publication-citation">
+        <strong>Steinbach, H., Stede, M., &amp; Abels, C. M. (forthcoming, 2026).</strong>
+        “Modeling Parliamentary Interaction in the German Bundestag via
+        Interjections and Policy Topics.” In
+        <em>Proceedings of the 6th Workshop on Computational Linguistics
+        for the Political and Social Sciences (CPSS), KONVENS 2026.</em>
+      </p>
+      <p class="project-description">
+        Accepted paper based on my <a href="#coalition-alignment">Master’s thesis</a>
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <p class="publication-citation">
+        <strong>Steinbach, H. M., Yüzüncüoglu, I., Rilla, R., &amp; Stede, M. (2025).</strong>
+        “Heroes, Villains, and Victims: Character Narratives in the WPS Agenda
+        of the UNSC.” In
+        <em>Proceedings of the 5th Workshop on Computational Linguistics
+        for the Political and Social Sciences (CPSS), KONVENS 2025.</em>
+        <a href="https://aclanthology.org/2025.konvens-2.5/" target="_blank" rel="noopener noreferrer">[Paper]</a>
+      </p>
+      <p class="project-description">
+        Analyzed UN Security Council speeches on Women, Peace, and Security
+        (WPS) using topic modeling, clustering, and supervised learning
+        (RoBERTa and LLMs). Revealed gendered framing patterns and released
+        annotated data and code for future research in political discourse analysis
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <p class="publication-citation">
+        <strong>Romero, J., Schaub, T., &amp; Steinbach, H. M. (2025).</strong>
+        “Towards Temporal Answer Set Programming with Preferences”
+        (Extended Abstract). <em>TAASP 2025 Workshop on Trends and Applications
+        of Answer Set Programming.</em>
+          <a href="https://taasp.at/2025/assets/paper/12_Towards_Temporal_Answer_Set.pdf" target="_blank" rel="noopener noreferrer">[Abstract]</a>
+      </p>
+    </div>
+  </section>
 
 
+  <section class="project-section">
+    <h2>Selected Research Projects</h2>
+
+    <div class="project-entry" id="coalition-alignment">
+      <h3>Coalition Alignment and Conflict in the German Parliament</h3>
+      <p class="project-meta">Master’s Thesis </p>
+      <p>
+        Analyzing parliamentary interjections to study coalition alignment and tension in Germany’s Traffic Light Coalition using manual
+          annotations and computational text analysis, including supervised topic modeling
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <h3>Parliamentary Interjections and Political Dynamics</h3>
+      <p class="project-meta">Individual Research Project</p>
+      <p>
+        Developed a publicly available NLP pipeline to extract and analyze
+        interjections from German parliamentary protocols, enabling large-scale
+        analysis of gender and party dynamics using rich metadata (e.g.,
+        speaker identity, party affiliation, and interjection type)
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <h3>DreamCatcher: LLM-Based Text Analysis and Web Application</h3>
+      <p class="project-meta">Group Project with Ralu · Programming with LLMs</p>
+      <p>
+        Designed a web application using Llama 3 for automated information
+        extraction from user texts (dreams), integrating NLP pipelines,
+        prompt engineering, and backend development to explore LLM performance
+        in low-resource domains
+      </p>
+        <img
+            src="../images/dreamcatcher.jpg"
+            alt="Ralu and Hannah in front of a mural saying 'Are you sure this is not a dream? and options 'Restart', 'Sleep', 'Cancel''"
+            class="project-image"
+          >
+    </div>
+
+    <div class="project-entry">
+      <h3>Authorial Presence in Scientific Writing</h3>
+      <p class="project-meta">Bachelor’s Thesis</p>
+      <p>
+        Analyzed first-person pronouns and co-occurring lexical verbs in
+        historical research articles to examine changes in authorial
+        self-mention and scientific identity across disciplines and over time
+      </p>
+    </div>
+  </section>
+
+  <p class="github-link">
+    My projects and code are available on
+    <a href="https://github.com/hannahsteinbach" target="_blank" rel="noopener noreferrer">GitHub ↗</a>.
+  </p>
+
+</main>
+<script>
+  function toggleQuote() {
+    document.getElementById("bubble-quote")
+      .classList.toggle("visible");
+  }
+</script>
 </body>
 </html>

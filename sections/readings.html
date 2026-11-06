@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hannah steinbach</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="topbar">
+      <div class="title-row">
+        <h1>hannah steinbach</h1>
+        <span class="symbols">
+         <button class="quote-button" onclick="toggleQuote()">🫧</button>
+            🦦
+        </span>
+      </div>
+
+      <p id="bubble-quote" class="bubble-quote">
+        "if you're truly wild at heart, you'll fight for your dreams"
+      </p>
+
+  <nav>
+    <a href="../index.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="readings.html" class="active">readings</a>
+    <a href="gallery.html">gallery</a>
+    <a href="contact.html">contact</a>
+  </nav>
+</header>
+<main class="page-content">
+<section><b>currently reading</b>
+<ul>
+    <li> <i>The Vegetarian</i>, Han Kang</li>
+</ul>
+</section>
+
+
+<section><b>2026 recommendations</b>
+<ul>
+    <li> <i>The Plague Dogs</i>, Richard Adams</li>
+    <li> <i>When Brains Dream</i>, Antonio Zadra & Robert Stickgold</li>
+    <li> <i>East of Eden</i>, John Steinbeck</li>
+    <li> <i>Sweet Thursday</i>, John Steinbeck</li>
+</ul>
+</section>
+</main>
+<script>
+  function toggleQuote() {
+    document.getElementById("bubble-quote")
+      .classList.toggle("visible");
+  }
+</script>
+</body>
+</html>
